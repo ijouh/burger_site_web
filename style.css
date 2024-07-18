@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+
+}
+
+body {
+ 
+}
+
+
+header {
+    position: fixed;
+    top : 0 ;
+    left : 0 ;
+    width: 100%;
+    background-color: #ddd7d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icons{
+    width: 35px;
+    cursor: pointer;
+}
+.logo{
+    width: 100px;
+    margin-left: -10%;
+}
+
+button img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+
+.menu ul a {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu ul a::after{
+    position: absolute;
+    left:0 ;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f7a800;
+    transition: 0.1 ease-out;
+
+}
+
+.menu ul a:hover::after {
+    width: 100%;
+}
+
+.header-end i {
+    margin: 20px;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2 ease-out;
+    margin: 20px;
+    background-color: #fa3333;
+
+}
+
+button span {
+    font-family:   sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+button:hover{
+    transform: scale(1.06);
+}
+.fa-crown , .fa-location-dot{
+    position: relative;
+    padding: 20px;
+}
+
+.login{
+    position: absolute;
+    right: -22px;
+    top: 60px;
+    width: 270px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    /* display: none; */
+}
+
+
+.login button {
+    width:100%;
+    margin: 0 14px;
+    background: #f7a800;
+}
+
+.hr{
+    border: 0;
+    margin: 30px 0 ;
+    background-color: #666666;
+    width: 100%;
+    height: 1px;
+}
+
+.header-end{
+    display:flex;
+    
+}
+
+button:hover{
+    transform: scale(1.06);
+}
+
+.login p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.login button:last-child{
+    background-color: transparent;
+    color: #f7a800;
+    border: 1px solid #f7a800;
+}
+
+.login::after{
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    z-index: -3;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(50deg);
+}
+
+.login::before{
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(50deg);
+}
+
+.fa-crown:hover .login{
+    display: block;
+}
+
+/* home */
+
+.home{
+    margin-top: 130px;
+    text-transform: uppercase;
+    background-image: url(images/image2.jpg);
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* start food */
+.foods{
+    margin: 50px 0;
+    padding: 0 10%;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton' , sans-serif;
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.foods p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.foods-list{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.foods-list img{
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-size: cover;
+}
+
+.foods-list .box{
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.foods-list .box:hover{
+    transform: scale(1.05);
+}
+/* end food */
+
+/* start fidelity prog */
+.fidelity_prog img{
+    width: 400px;
+    height: 100%;
+    margin: 10px;
+    transition: 0.5s;
+}
+.fidelity_prog img:hover{
+    transform: scale(0.9);
+}
+.fidelity_prog{
+    margin: 35px 0;
+    height: 510px;
+    width: 100%;
+    background-image: url(images/img2_back.jfif);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fidelity_prog div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fidelity_prog button{
+    margin-top: 20px;
+    background-color: #f7a800;
+}
+
+.fidelity_prog .div1{
+    width: 350px;
+    /* margin-top: 50px; */
+}
+.fidelity_prog .div2{
+    width: 420px;
+}
+
+.fidelity_prog .div3{
+    width: 100%;
+    height: 392px;
+}
+
+/* .fidelity_prog img{
+    width: 100%;
+} */
+
+/* end fidelity prog */
+
+.little-food{
+    padding: 0 10%;
+}
+
+.little-food img {
+    width: 220px;
+} 
+
+
+.little-food_box {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 280px;
+} 
+
+.little-food_box .box {
+   background-color: #fff;
+   box-shadow:0 0 8px rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   padding: 20px;
+   height: 100%;
+   margin: 0 8px;
+   transition: 0.25;
+} 
+
+.little-food_box .box:hover{
+    transform: scale(0.9);
+}
+h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* start footer */
+footer{
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    padding: 25px 10px;
+    margin:20px 10px;
+}
+footer p {
+    font-size: 15px;
+}
+
+.icones_social i{
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.icones_social i:nth-child(2){
+    color: red;
+}
+.icones_social i:nth-child(1){
+    color: blue;
+}
+.icones_social i:nth-child(3){
+    color: rgb(247, 0, 255);
+}
+
+footer img{
+    margin-top: 20px;
+    border: 1px solid #fff;
+    height: 50px;
+    cursor: pointer;
+}
+
+footer .div2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .div2 h3{
+    margin-bottom: 10px;
+} 
+footer .div2 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .div2 ul a{
+   font-size: 13px;
+   color: #fff;
+   text-decoration: 0;
+   margin-bottom: 5px;
+   transition: 0.5s;
+}
+
+footer .div2 ul a:hover{
+    margin-left: 10px;
+}
+
+footer .div3{
+    text-align: center;
+}
+
+footer .div3 p:nth-child(1){
+    font-size: 13px;
+}
+
+footer .div3 p:nth-child(2){
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+/* end  footer */
+
+
